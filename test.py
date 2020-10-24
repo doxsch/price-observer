@@ -9,6 +9,7 @@ def main():
     headers = {'Content-Type': 'text/html', }
     response = requests.get(url, headers=headers)
     html = response.text
+    print(html)
     with open('google_com_html', 'w') as f:
         f.write(html)
 
