@@ -1,0 +1,24 @@
+{
+  "name": "price-observer",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gh:start": "npm start && cat data.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doxsch/price-observer.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/doxsch/price-observer/issues"
+  },
+  "homepage": "https://github.com/doxsch/price-observer#readme",
+  "dependencies": {
+    "puppeteer": "^5.4.0"
+  }
+}
