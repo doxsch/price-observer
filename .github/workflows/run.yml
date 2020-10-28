@@ -36,5 +36,5 @@ jobs:
           REPO: self
           BRANCH: data-collector
           FOLDER: data
-          SQUASH_HISTORY: false
+          SQUASH_HISTORY: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
