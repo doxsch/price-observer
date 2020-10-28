@@ -23,7 +23,7 @@ jobs:
 
     - name: Checkout existing data
       uses: actions/checkout@v2
-      if: ${{git ls-remote --exit-code --heads https://github.com/doxsch/price-observer.git data-collector}}
+      if: ${{ git ls-remote --exit-code --heads https://github.com/doxsch/price-observer.git data-collector }}
       with:
         ref: data-collector
         path: data
