@@ -21,8 +21,11 @@ jobs:
     - name: Install dependency
       run: npm ci
 
+    - name: Show existing data
+      run: git show origin/data-collector:data.json
+
     - name: Checkout existing data
-      run: git show origin/data-collector:data.json > test.txt 2> ./data/data.json || rm ./data/data.json
+      run: git show origin/data-collector:data.json > data/data.json 2> data/data.json || rm data/data.json
 
     - name: Run puppeteer
       run: npm start
