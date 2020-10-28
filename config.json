@@ -1,0 +1,41 @@
+{
+  "macbook-microspot": {
+    "url": "https://www.microspot.ch/de/computer-gaming/notebooks/notebooks--c511000/apple-macbook-air-2020-13-3-intel-core-i5-8-gb-ram-512-gb-ssd--p0002346775",
+    "paths": [
+      {
+        "name": "Preis",
+        "path": "/html/body/div[1]/div/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[2]/div/div[1]/div/span[2]"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "path": "//*[@id=\"TOP_CONTENT_ANCHOR\"]/div/div/div[2]/div[1]/div[2]/div[2]/div/ul/li[3]/span"
+      }
+    ]
+  },
+  "iphone12pro-interdiscount": {
+    "url": "https://www.interdiscount.ch/de/mobiltelefon-tablet-wearables/mobiltelefon/mobiltelefone--c411000/apple-iphone-12-pro-5g-6-1-256-gb-12-mp-pazifikblau--p0002551087",
+    "paths": [
+      {
+        "name": "Preis",
+        "path": "//*[@id=\"TOP_CONTENT_ANCHOR\"]/div/div/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div/span[2]"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "path": "//*[@id=\"TOP_CONTENT_ANCHOR\"]/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div/div[2]/div[1]/div[2]"
+      }
+    ]
+  },
+  "iphone11-mediamarkt": {
+    "url": "https://www.mediamarkt.ch/de/product/_apple-iphone-11-1948087.html",
+    "paths": [
+      {
+        "name": "Preis",
+        "path": "//*[@id=\"product-sidebar\"]/div[4]/form/div[1]/div[2]"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "path": "//*[@id=\"product-details\"]/div[2]/div[1]/div[3]/ul/li[1]/p"
+      }
+    ]
+  }
+}

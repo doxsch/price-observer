@@ -1,11 +1,10 @@
 # This workflows will upload a Python Package using Twine when a release is created
 # For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
 
-name: Upload Python Package
+name: Run Observer
 
 on:
   workflow_dispatch:
-
 
 jobs:
   deploy:
@@ -23,5 +22,13 @@ jobs:
       run: npm ci
     
     - name: Run puppeteer
-      run: npm run gh:start
-     
+      run: npm start
+
+    - name: Save data to branch
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: self
+          BRANCH: data-collector
+          FOLDER: data
+          SQUASH_HISTORY: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
