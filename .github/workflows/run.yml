@@ -20,6 +20,13 @@ jobs:
    
     - name: Install dependency
       run: npm ci
+
+    - name: Checkout existing data
+      uses: actions/checkout@v2
+      if: ${{git ls-remote --exit-code --heads https://github.com/doxsch/price-observer.git data-collector}}
+      with:
+        ref: data-collector
+        path: data
     
     - name: Run puppeteer
       run: npm start
