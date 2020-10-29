@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATA_BRANCH: data-collector
+      DATA_FOLDER: data
+      DATA_FILE: data.json
 
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +26,7 @@ jobs:
       run: npm ci
 
     - name: Checkout existing data
-      run: curl -s -S -f -o data/data.json https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$DATA_BRANCH/data.json
+      run: mkdir -p $DATA_FOLDER && curl -s -S -f -o $DATA_FOLDER/$DATA_FILE https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$DATA_BRANCH/$DATA_FILE
 
     - name: Run puppeteer
       run: npm start
@@ -34,6 +36,6 @@ jobs:
       env:
           REPO: self
           BRANCH: $DATA_BRANCH
-          FOLDER: data
+          FOLDER: $DATA_FOLDER
           SQUASH_HISTORY: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
