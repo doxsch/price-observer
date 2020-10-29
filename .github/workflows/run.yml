@@ -10,6 +10,8 @@ jobs:
   deploy:
 
     runs-on: ubuntu-latest
+    env:
+      DATA_BRANCH: data-collector
 
     steps:
     - uses: actions/checkout@v2
@@ -21,11 +23,8 @@ jobs:
     - name: Install dependency
       run: npm ci
 
-    - name: Show existing data
-      run: git show origin/data-collector:data.json
-
     - name: Checkout existing data
-      run: git show origin/data-collector:data.json > data/data.json 2> data/data.json || rm data/data.json
+      run: curl -s -S -f -o data/data.json https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$DATA_BRANCH/data.json
 
     - name: Run puppeteer
       run: npm start
@@ -34,7 +33,7 @@ jobs:
       uses: s0/git-publish-subdir-action@master
       env:
           REPO: self
-          BRANCH: data-collector
+          BRANCH: $DATA_BRANCH
           FOLDER: data
           SQUASH_HISTORY: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
