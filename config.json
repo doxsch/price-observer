@@ -34,7 +34,7 @@
       },
       {
         "name": "Verfügbarkeit",
-        "path": "//*[@id=\"product-details\"]/div[2]/div[1]/div[3]/ul/li[1]/p"
+        "path": "//*[@id=\"product-details\"]/div[2]/div[1]/div[3]/ul/li[1]"
       }
     ]
   }
