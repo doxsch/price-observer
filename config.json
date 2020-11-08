@@ -30,7 +30,7 @@
     "paths": [
       {
         "name": "Preis",
-        "path": "//*[@id=\"product-sidebar\"]/div[4]/form/div[1]/div[2]"
+        "path": "//*[@id=\"product-details\"]/div[2]/div[1]/div[2]"
       },
       {
         "name": "Verfügbarkeit",

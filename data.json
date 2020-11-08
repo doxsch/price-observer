@@ -1,0 +1,68 @@
+{
+  "xiaomi-mop-pro-digitec": {
+    "2020-10-28": [
+      {
+        "name": "Preis",
+        "data": "309.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Übermorgen geliefert, wenn bis morgen um 18:00 bestellt"
+      }
+    ],
+    "2020-10-27": [
+      {
+        "name": "Preis",
+        "data": "309.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Übermorgen 29.10 geliefert"
+      }
+    ]
+  },
+  "iphone12-digitec": {
+    "2020-10-28": [
+      {
+        "name": "Preis",
+        "data": "1129.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Aktuell nicht lieferbar und kein Liefertermin vorhanden."
+      }
+    ],
+    "2020-10-27": [
+      {
+        "name": "Preis",
+        "data": "1129.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Aktuell nicht lieferbar und kein Liefertermin vorhanden."
+      }
+    ]
+  },
+  "macbook-microspot": {
+    "2020-10-27": [
+      {
+        "name": "Preis",
+        "data": "1'199.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Freitag, 30.10.2020 "
+      }
+    ],
+    "2020-10-28": [
+      {
+        "name": "Preis",
+        "data": "1'199.–"
+      },
+      {
+        "name": "Verfügbarkeit",
+        "data": "Samstag, 31.10.2020 "
+      }
+    ]
+  }
+}
